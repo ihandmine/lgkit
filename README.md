@@ -42,6 +42,19 @@ Android 逆向调试工具箱（LSPosed 模块）：Xposed Hook、Frida Gadget �
 - 首页展示设备标识，以及目标 app 配置的伪装值
 - 一键重启目标、撤销部署
 
+### 命令行客户端
+
+Xposed 模式下除了界面，还可以用命令行下发脚本、看实时日志。客户端不随 APK 打包，
+在 Release 的 `lgkit-clients-v1.0.0.zip` 里：
+
+- **lgnet**：网络长连接（Go 静态二进制，5 个平台）。把目标的「lgnet 端口」设为非 0，
+  force-stop 重启后：
+  ```bash
+  ./lgnet -H <手机IP>:27045 -l script.js      # 挂住看实时日志
+  ./lgnet -H <手机IP>:27045 -e 'console.log(1)' --once
+  ```
+- **lgctl**：文件轮询通道（bash + adb + root），支持 `ps / log / run / classes`
+
 ## 环境要求
 
 - Android 8.0+（minSdk 26），arm64 设备
