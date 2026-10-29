@@ -12,4 +12,4 @@
 - 模拟位置页：系统级 mock（覆盖 native 地图）
 - 日志：xposed.log / gadget.log 分通道，类型过滤、跟随、导出
 - 首页：模块状态、设备标识与目标伪装值、开发者信息
-- 命令行客户端：`lgnet`（5 个平台）与 `lgctl`，见 Release 的 `lgkit-clients-v1.0.0.zip`
+- 命令行客户端：`lgnet`（5 个平台），见 Release 的 `lgkit-clients-v1.0.0.zip`
