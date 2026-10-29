@@ -4,6 +4,14 @@ Android 逆向调试工具箱（LSPosed 模块）：Xposed Hook、Frida Gadget �
 
 > 本仓库只发布编译产物与使用说明，**不提供源码**。
 
+## 截图
+
+| 首页 | Xposed 配置 |
+|---|---|
+| ![首页](screenshots/index.png) | ![Xposed](screenshots/xposed.jpg) |
+
+![Gadget 配置](screenshots/gadget.png)
+
 ## 功能
 
 ### Xposed 通道（无需加载 so）
