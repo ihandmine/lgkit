@@ -1,0 +1,36 @@
+# 发布仓库只放文档、截图和 update.json，其他一律忽略。
+
+# 构建产物（走 Releases，不进仓库）
+*.apk
+*.aab
+*.zip
+*.so
+*.dex
+
+# 签名材料
+*.p12
+*.jks
+*.keystore
+*.pem
+*.key
+
+# 源码与构建目录（不该出现在这个仓库）
+src/
+build/
+libs/
+tools/
+stub/
+stub-classes/
+*.java
+*.kt
+*.py
+*.sh
+proguard-rules.pro
+
+# 内部发版清单
+RELEASE_CHECKLIST.md
+
+# 系统/编辑器
+.DS_Store
+.idea/
+.vscode/
